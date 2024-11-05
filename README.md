@@ -104,8 +104,6 @@ A user-friendly interface displays conversation records, allowing users to easil
 ### **Local music playback**
 Users can play local music files to add entertainment to the overall experience.
 
-开发 SDK 还是所有源码？  
-API 接口流程图？
 
 Hardware
 ------
@@ -116,9 +114,6 @@ Android system with touch screen
 To start developing
 ------
 
-是否有硬件 minimal 需求？  
-需要修改哪些配置文件？  
-跑哪个文件开始运行？
 
 Contributions
 ------
