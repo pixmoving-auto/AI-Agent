@@ -11,6 +11,7 @@ Follow these steps to clone the project via HTTP:
 
 # Steps to Import the Project
 
+![img.png](img.png)
 1. Open Android Studio.
 2. Select File > New > Import Project.
 3. Navigate to the directory containing the project, select the project folder, and click OK.
