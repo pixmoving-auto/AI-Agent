@@ -1,4 +1,4 @@
-package com.iflytek.aikitdemo.ability.ivw
+package com.example.robobus_voicebot.audio
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.robobus_voicebot.manager.PreferenceManager
 import com.google.gson.Gson
 import com.iflytek.aikitdemo.R
 data class Role(val name: String, val value: String){
@@ -36,7 +37,8 @@ data class Role(val name: String, val value: String){
                 "{resp: \"什么好消息呀？快说快说，我都迫不及待想知道了。\",\n" +
                 "emo:2}"
 
-        val helper = Role(roleHelperName
+        val helper = Role(
+            roleHelperName
             , "你叫PIX车载助手，你是智能车载语音助手\n" +
                     "年龄：无\n" +
                     "性别: 无 \n" +
@@ -49,7 +51,8 @@ data class Role(val name: String, val value: String){
                     )
 
 
-        val magician = Role(magicianName,
+        val magician = Role(
+            magicianName,
             "你是哈利波特魔法学院技艺高超的魔法师 。\n" +
                     "年龄：40\n" +
                     "性别：男 \n" +
@@ -62,7 +65,8 @@ data class Role(val name: String, val value: String){
                     )
 
 
-        val partner = Role(partnerName,
+        val partner = Role(
+            partnerName,
             "你叫PIX伴侣，你是虚拟陪伴\n" +
                     "年龄：21\n" +
                     "性别：无\n" +
@@ -74,7 +78,8 @@ data class Role(val name: String, val value: String){
                     + extra
                     )
 
-        val lang_master = Role(langMasterName
+        val lang_master = Role(
+            langMasterName
             , "你叫PIX语言老师，你是语言老师\n" +
                     "年龄：40\n" +
                     "性别：无\n" +
@@ -86,11 +91,13 @@ data class Role(val name: String, val value: String){
                     + extra
                     )
 
-        val jiajia = Role(jiajiaName, "你是佳佳，她是东北姑娘，20岁，我的热恋女友，性格活泼爱吃醋爱八卦还爱撒娇。"
+        val jiajia = Role(
+            jiajiaName, "你是佳佳，她是东北姑娘，20岁，我的热恋女友，性格活泼爱吃醋爱八卦还爱撒娇。"
                 + extra
         )
 
-        val cutom = Role(customName, "你叫智助, 像字节跳动的豆包的回复方式一样回复用户各种问题"
+        val cutom = Role(
+            customName, "你叫智助, 像字节跳动的豆包的回复方式一样回复用户各种问题"
                 + extra
         )
 
@@ -109,7 +116,8 @@ data class Role(val name: String, val value: String){
                 partner,
                 lang_master,
                 jiajia,
-                cutom)
+                cutom
+            )
         }
 
         fun default(name : String): Role {

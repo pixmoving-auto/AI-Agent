@@ -1,6 +1,4 @@
-package com.iflytek.aikitdemo.ability.ivw;
-
-import android.app.Activity;
+package com.example.robobus_voicebot.ability;
 
 import com.alibaba.fastjson.JSON;
 import lombok.Getter;

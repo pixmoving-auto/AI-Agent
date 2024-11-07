@@ -1,4 +1,4 @@
-package com.iflytek.aikitdemo.ability.ivw
+package com.example.robobus_voicebot.activity
 
 
 import android.Manifest
@@ -34,6 +34,20 @@ import androidx.core.app.ActivityCompat
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import com.bumptech.glide.Glide
+import com.example.robobus_voicebot.audio.AudioPlayer
+import com.example.robobus_voicebot.audio.AudioPlayerListener
+import com.example.robobus_voicebot.ability.KeywordEngineListener
+import com.example.robobus_voicebot.audio.Lang
+import com.example.robobus_voicebot.audio.LangAdaptor
+import com.example.robobus_voicebot.audio.MicrophoneStream
+import com.example.robobus_voicebot.audio.Role
+import com.example.robobus_voicebot.audio.RoleAdaptor
+import com.example.robobus_voicebot.ability.Tone
+import com.example.robobus_voicebot.ability.ToneAdaptor
+import com.example.robobus_voicebot.ability.TtsServerListener
+import com.example.robobus_voicebot.manager.TtsServerManager
+import com.example.robobus_voicebot.manager.KeywordEngineManager
+import com.example.robobus_voicebot.manager.PreferenceManager
 import com.google.android.material.button.MaterialButton
 import com.google.gson.Gson
 import com.iflytek.aikitdemo.R
@@ -90,7 +104,8 @@ data class RespWithEmo(val resp: String, val emo: Int) {
     }
 }
 
-class IvwActivity: BaseActivity(),TtsServerListener, KeywordEngineListener, AudioPlayerListener {
+class IvwActivity: BaseActivity(), TtsServerListener, KeywordEngineListener,
+    AudioPlayerListener {
     private val TAG = "avbs IvwActivity"
     private val ASR_TIMEOUT = 800 //800
     private val AUTO_DISCONNECT_TIMEOUT = 1000 * 60 * 10
@@ -1214,23 +1229,23 @@ class IvwActivity: BaseActivity(),TtsServerListener, KeywordEngineListener, Audi
             val emo = this.respWithEmo.emo
 
             when(emo){
-                RespWithEmo.NORMAL->{
+                RespWithEmo.NORMAL ->{
                     showEmo(Emo.SPEAKING)
                     Log.i(TAG, "SPEAKING")
                 }
-                RespWithEmo.EXCITING->{
+                RespWithEmo.EXCITING ->{
                     showEmo(Emo.EXCITING)
                     Log.i(TAG, "EXCITING")
                 }
-                RespWithEmo.SURPRISED->{
+                RespWithEmo.SURPRISED ->{
                     showEmo(Emo.SURPRISED)
                     Log.i(TAG, "SURPRISED")
                 }
-                RespWithEmo.SAD->{
+                RespWithEmo.SAD ->{
                     showEmo(Emo.SAD)
                     Log.i(TAG, "SAD")
                 }
-                RespWithEmo.CONFUSED->{
+                RespWithEmo.CONFUSED ->{
                     showEmo(Emo.CONFUSED)
                     Log.i(TAG, "CONFUSED")
                 }

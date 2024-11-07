@@ -1,4 +1,4 @@
-package com.iflytek.aikitdemo.ability.ivw;
+package com.example.robobus_voicebot.audio;
 
 public interface AudioPlayerListener {
     void onCompletion(AudioPlayer audioPlayer);

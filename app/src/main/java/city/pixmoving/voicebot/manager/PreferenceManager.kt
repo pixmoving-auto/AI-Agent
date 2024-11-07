@@ -1,6 +1,8 @@
-package com.iflytek.aikitdemo.ability.ivw
+package com.example.robobus_voicebot.manager
 import android.content.Context
 import android.content.SharedPreferences
+import com.example.robobus_voicebot.audio.Lang
+import com.example.robobus_voicebot.audio.Role
 import com.iflytek.aikitdemo.MyApp
 class PreferenceManager private constructor(context: Context) {
     // 定义SharedPreferences文件名
@@ -80,13 +82,13 @@ class PreferenceManager private constructor(context: Context) {
             ?: return "自定义"
     }
 
-    fun getRole(name: String): Role{
+    fun getRole(name: String): Role {
         val role = sharedPreferences.getString(KEY_ROLE_PREFIX + name, null)?.let{ Role.fromJson(it) }
 
         return role ?: Role.default(name)
     }
 
-    fun getLang(): Lang{
+    fun getLang(): Lang {
         val lang = sharedPreferences.getString(KEY_APP_LANG, null)?.let { Lang.fromJson(it) }
 
         return lang ?: Lang.default()

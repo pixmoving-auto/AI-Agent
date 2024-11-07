@@ -1,12 +1,12 @@
-package com.iflytek.aikitdemo.ability.ivw
+package com.example.robobus_voicebot.ability
 import android.content.Context
-import android.content.SharedPreferences
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.robobus_voicebot.manager.PreferenceManager
 import com.iflytek.aikitdemo.R
 data class Tone(val name: String, val value: String, val isSelected: Boolean)
 

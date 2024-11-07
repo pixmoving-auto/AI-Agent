@@ -17,13 +17,11 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.iflytek.aikitdemo.MyApp
-import com.iflytek.aikitdemo.ability.ivw.PreferenceManager
-import com.iflytek.aikitdemo.layout.MProgressDialog
+import com.example.robobus_voicebot.manager.PreferenceManager
 import java.util.Locale
 
 
 open class BaseActivity : AppCompatActivity() {
-    var progress: MProgressDialog? = null
 
     override fun attachBaseContext(newBase: Context) {
         super.attachBaseContext(updateBaseContextLocale(newBase))
@@ -72,15 +70,6 @@ open class BaseActivity : AppCompatActivity() {
     open fun updateUiForLang(){
     }
 
-    @JvmOverloads
-    fun initProgressDialog(cancel: Boolean = true, message: String? = null) {
-        initProgressDialog(this, cancel, message)
-    }
-
-    fun initProgressDialog(mContext: Context?, cancel: Boolean, message: String?) {
-        progress = MProgressDialog(mContext, cancel)
-        progress!!.setMessage(message)
-    }
 
     fun showNormalToast(msg: String?) {
         Toast.makeText(applicationContext, msg, Toast.LENGTH_SHORT).show()

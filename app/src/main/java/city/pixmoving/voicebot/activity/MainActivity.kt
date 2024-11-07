@@ -1,4 +1,4 @@
-package com.iflytek.aikitdemo
+package com.example.robobus_voicebot.activity
 
 import android.Manifest
 import android.content.Intent
@@ -10,7 +10,7 @@ import android.provider.Settings
 import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.widget.AppCompatButton
-import com.iflytek.aikitdemo.ability.ivw.IvwActivity
+import com.iflytek.aikitdemo.R
 import com.iflytek.aikitdemo.base.BaseActivity
 
 

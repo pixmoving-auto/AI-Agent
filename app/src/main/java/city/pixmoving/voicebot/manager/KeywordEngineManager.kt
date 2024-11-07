@@ -1,6 +1,7 @@
-package com.iflytek.aikitdemo.ability.ivw;
+package com.example.robobus_voicebot.manager;
 
 import android.util.Log
+import com.example.robobus_voicebot.ability.KeywordEngineListener
 import com.iflytek.aikitdemo.MyApp
 import com.iflytek.aikitdemo.ability.AbilityCallback
 import java.io.BufferedWriter
@@ -22,7 +23,7 @@ object KeywordEngineManager : AbilityCallback {
 
 
     fun setListener(listener: KeywordEngineListener?) {
-        this.listener = listener
+        KeywordEngineManager.listener = listener
     }
 
 

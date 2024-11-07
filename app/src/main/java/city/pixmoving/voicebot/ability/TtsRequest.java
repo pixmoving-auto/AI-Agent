@@ -1,4 +1,4 @@
-package com.iflytek.aikitdemo.ability.ivw;
+package com.example.robobus_voicebot.ability;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import lombok.Builder;

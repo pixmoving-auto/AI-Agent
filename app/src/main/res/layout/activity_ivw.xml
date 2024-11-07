@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ability.ivw.IvwActivity">
+    tools:context="com.example.robobus_voicebot.activity.IvwActivity">
 
 
     <LinearLayout
