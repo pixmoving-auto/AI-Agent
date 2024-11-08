@@ -1,6 +1,6 @@
 # Arc AI agent 1.0
 
-# Overview
+## Overview
 AI agent 1.0 minimized the closed loop for creating virtual characters and their interactions through voice and expressions. Four preset virtual characters and a voice library, along with a visual representation of conversation history functions are provided.  
 - **Create avatars**  
   Users can customize and create their own avatars. To help achieve this, our project provides four preset characters with different personalities and speaking styles.
@@ -17,7 +17,7 @@ A user-friendly interface displays conversation records, allowing users to easil
 - **Local music playback**  
 Users can play local music files to add entertainment to the overall experience.  
 
-# Installation
+## Installation
 ### Clone Project
 - Open the terminal or command line tool.
 - Run the following command to clone the repository.  
@@ -36,7 +36,7 @@ Users can play local music files to add entertainment to the overall experience.
 - API level: 33
 - JBR (JetBrains Runtime): 17  
 
-# User Mannual
+## User Mannual
 
 ### Initial Setup
 -  **Ensure Internet Connection:** Confirm that your device is connected to the internet.  
