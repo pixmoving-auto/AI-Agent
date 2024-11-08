@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="false">
+
+    <LinearLayout
+        android:id="@+id/nameVauleLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/valueTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/selectedIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        app:srcCompat="@mipmap/selected" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="1sp"
+        android:layout_below="@id/nameVauleLL"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#C6C6C6" />
+
+</RelativeLayout>
