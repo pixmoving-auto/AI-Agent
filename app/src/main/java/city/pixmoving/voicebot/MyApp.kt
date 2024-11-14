@@ -1,4 +1,4 @@
-package com.iflytek.aikitdemo
+package city.pixmoving.voicebot
 
 import android.app.Application
 import android.content.Context

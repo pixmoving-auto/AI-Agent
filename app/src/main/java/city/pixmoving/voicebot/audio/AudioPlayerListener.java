@@ -1,4 +1,4 @@
-package com.example.robobus_voicebot.audio;
+package city.pixmoving.voicebot.audio;
 
 public interface AudioPlayerListener {
     void onCompletion(AudioPlayer audioPlayer);

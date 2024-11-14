@@ -1,9 +1,10 @@
-package com.example.robobus_voicebot.manager
+package city.pixmoving.voicebot.manager
 import android.content.Context
 import android.content.SharedPreferences
-import com.example.robobus_voicebot.audio.Lang
-import com.example.robobus_voicebot.audio.Role
-import com.iflytek.aikitdemo.MyApp
+import city.pixmoving.voicebot.MyApp
+import city.pixmoving.voicebot.audio.Lang
+import city.pixmoving.voicebot.audio.Role
+
 class PreferenceManager private constructor(context: Context) {
     // 定义SharedPreferences文件名
     private val PREF_NAME = "MyPreferences"

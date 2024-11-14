@@ -1,4 +1,4 @@
-package com.example.robobus_voicebot.activity
+package city.pixmoving.voicebot.activity
 
 import android.Manifest
 import android.content.Intent
@@ -11,7 +11,6 @@ import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.widget.AppCompatButton
 import com.iflytek.aikitdemo.R
-import com.iflytek.aikitdemo.base.BaseActivity
 
 
 class MainActivity : BaseActivity() {
@@ -57,7 +56,9 @@ class MainActivity : BaseActivity() {
         startActivity(Intent(this, IvwActivity::class.java))
     }
 
+    private fun actionBarNavigation(b: Boolean) {
 
+    }
 
 
     private val activityResultLauncher =

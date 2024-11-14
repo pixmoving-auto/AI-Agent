@@ -1,6 +1,7 @@
-package com.example.robobus_voicebot.ability;
+package city.pixmoving.voicebot.ability;
 
-import com.example.robobus_voicebot.manager.TtsServerManager;
+
+import city.pixmoving.voicebot.manager.TtsServerManager;
 
 public interface TtsServerListener {
     //会在非UI线程上被调用

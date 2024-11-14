@@ -1,4 +1,4 @@
-package com.iflytek.aikitdemo.activity
+package city.pixmoving.voicebot.activity
 
 
 import android.content.Context
@@ -16,8 +16,8 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.iflytek.aikitdemo.MyApp
-import com.example.robobus_voicebot.manager.PreferenceManager
+import city.pixmoving.voicebot.MyApp
+import city.pixmoving.voicebot.manager.PreferenceManager
 import java.util.Locale
 
 

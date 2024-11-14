@@ -23,7 +23,7 @@
 
 
     <application
-        android:name=".MyApp"
+        android:name="city.pixmoving.voicebot.MyApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -38,7 +38,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name="com.example.robobus_voicebot.activity.IvwActivity"
+            android:name="city.pixmoving.voicebot.activity.IvwActivity"
             android:screenOrientation="landscape"
             android:exported="true">
             <intent-filter>

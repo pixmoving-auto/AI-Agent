@@ -1,4 +1,4 @@
-package com.example.robobus_voicebot.ability;
+package city.pixmoving.voicebot.ability;
 
 import com.alibaba.fastjson.JSON;
 import lombok.Getter;

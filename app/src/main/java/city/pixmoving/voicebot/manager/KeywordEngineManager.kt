@@ -1,9 +1,9 @@
-package com.example.robobus_voicebot.manager;
+package city.pixmoving.voicebot.manager;
 
 import android.util.Log
-import com.example.robobus_voicebot.ability.KeywordEngineListener
-import com.iflytek.aikitdemo.MyApp
-import com.iflytek.aikitdemo.ability.AbilityCallback
+import city.pixmoving.voicebot.MyApp
+import city.pixmoving.voicebot.ability.AbilityCallback
+import city.pixmoving.voicebot.ability.KeywordEngineListener
 import java.io.BufferedWriter
 import java.io.File
 import java.io.FileOutputStream

@@ -1,4 +1,4 @@
-package com.iflytek.aikitdemo.base
+package city.pixmoving.voicebot.base
 
 import android.os.Bundle
 import android.view.MenuItem

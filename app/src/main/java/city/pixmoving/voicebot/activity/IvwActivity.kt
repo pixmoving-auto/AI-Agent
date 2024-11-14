@@ -1,4 +1,4 @@
-package com.example.robobus_voicebot.activity
+package city.pixmoving.voicebot.activity
 
 
 import android.Manifest
@@ -11,7 +11,7 @@ import android.media.AudioRecord
 import android.media.MediaPlayer
 import android.media.MediaRecorder
 import android.net.Uri
-import android.os.speechSubscriptionKey
+import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.os.Handler
@@ -33,25 +33,25 @@ import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.app.ActivityCompat
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
+import city.pixmoving.voicebot.ability.KeywordEngineListener
+import city.pixmoving.voicebot.ability.Tone
+import city.pixmoving.voicebot.ability.ToneAdaptor
+import city.pixmoving.voicebot.ability.TtsServerListener
+import city.pixmoving.voicebot.audio.AudioPlayer
+import city.pixmoving.voicebot.audio.AudioPlayerListener
+import city.pixmoving.voicebot.audio.Lang
+import city.pixmoving.voicebot.audio.LangAdaptor
+import city.pixmoving.voicebot.audio.MicrophoneStream
+import city.pixmoving.voicebot.audio.Role
+import city.pixmoving.voicebot.audio.RoleAdaptor
+import city.pixmoving.voicebot.manager.KeywordEngineManager
+import city.pixmoving.voicebot.manager.PreferenceManager
+import city.pixmoving.voicebot.manager.TtsServerManager
 import com.bumptech.glide.Glide
-import com.example.robobus_voicebot.audio.AudioPlayer
-import com.example.robobus_voicebot.audio.AudioPlayerListener
-import com.example.robobus_voicebot.ability.KeywordEngineListener
-import com.example.robobus_voicebot.audio.Lang
-import com.example.robobus_voicebot.audio.LangAdaptor
-import com.example.robobus_voicebot.audio.MicrophoneStream
-import com.example.robobus_voicebot.audio.Role
-import com.example.robobus_voicebot.audio.RoleAdaptor
-import com.example.robobus_voicebot.ability.Tone
-import com.example.robobus_voicebot.ability.ToneAdaptor
-import com.example.robobus_voicebot.ability.TtsServerListener
-import com.example.robobus_voicebot.manager.TtsServerManager
-import com.example.robobus_voicebot.manager.KeywordEngineManager
-import com.example.robobus_voicebot.manager.PreferenceManager
+
 import com.google.android.material.button.MaterialButton
 import com.google.gson.Gson
 import com.iflytek.aikitdemo.R
-import com.iflytek.aikitdemo.activity.BaseActivity
 
 import com.microsoft.cognitiveservices.speech.SpeechConfig
 import com.microsoft.cognitiveservices.speech.SpeechRecognitionEventArgs
@@ -801,7 +801,7 @@ class IvwActivity: BaseActivity(), TtsServerListener, KeywordEngineListener,
     private fun initSpeechReco (){
         //val speechSubscriptionKey = "
         // " //key1
-        val speechSubscriptionKey =  "KET" //key2
+        val speechSubscriptionKey =  "" //key2
         val speechRegion = "eastasia"
 
         try {

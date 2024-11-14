@@ -1,14 +1,16 @@
-package com.example.robobus_voicebot.audio;
+package city.pixmoving.voicebot.audio;
 
 import android.media.MediaPlayer;
 import android.util.Log;
 
-import com.iflytek.aikitdemo.MyApp;
+
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+
+import city.pixmoving.voicebot.MyApp;
 
 
 public class AudioPlayer implements MediaPlayer.OnCompletionListener, MediaPlayer.OnErrorListener {

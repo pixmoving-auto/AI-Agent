@@ -1,6 +1,6 @@
-package com.example.robobus_voicebot.ability;
+package city.pixmoving.voicebot.ability;
 
-import com.example.robobus_voicebot.manager.KeywordEngineManager
+import city.pixmoving.voicebot.manager.KeywordEngineManager
 import java.io.File;
 
 

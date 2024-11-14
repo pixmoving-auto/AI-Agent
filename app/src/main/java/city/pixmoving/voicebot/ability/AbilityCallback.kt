@@ -1,4 +1,4 @@
-package com.iflytek.aikitdemo.ability
+package city.pixmoving.voicebot.ability
 
 /**
  * @Desc: 自定义能力回调

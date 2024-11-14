@@ -1,11 +1,8 @@
-package com.example.robobus_voicebot.manager;
+package city.pixmoving.voicebot.manager;
 
 import android.util.Log;
 
 import com.alibaba.fastjson.JSON;
-import com.example.robobus_voicebot.ability.TtsRequest;
-import com.example.robobus_voicebot.ability.TtsServerListener;
-import com.example.robobus_voicebot.ability.TtsWebsocketDemo;
 
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.framing.CloseFrame;
@@ -21,6 +18,10 @@ import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.UUID;
+
+import city.pixmoving.voicebot.ability.TtsRequest;
+import city.pixmoving.voicebot.ability.TtsServerListener;
+import city.pixmoving.voicebot.ability.TtsWebsocketDemo;
 
 
 public class TtsServerManager{

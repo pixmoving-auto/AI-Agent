@@ -1,4 +1,4 @@
-package com.example.robobus_voicebot.audio
+package city.pixmoving.voicebot.audio
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.robobus_voicebot.manager.PreferenceManager
+import city.pixmoving.voicebot.manager.PreferenceManager
 import com.google.gson.Gson
 import com.iflytek.aikitdemo.R
 
