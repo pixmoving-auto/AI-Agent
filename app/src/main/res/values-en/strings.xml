@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="keyword">Keyword</string>
+
+    <string name="app_name">Robobus_voicebot</string>
+    <string name="emo_on">Emo ON</string>
+    <string name="emo_off">Emo OFF</string>
+    <string name="llm">LLM</string>
+    <string name="role">Role</string>
+    <string name="tone">Tone</string>
+    <string name="role_setting">Edit Role</string>
+    <string name="lang_setting">Lang</string>
+
+    <string name="hearing"></string>
+    <string name="start_robot">Start Robot</string>
+    <string name="stop_robot">Stop Robot</string>
+    <string name="stop_app">Stop App</string>
+
+
+
+    <string name="conn_status_ok">Connected</string>
+    <string name="conn_status_err">Disconnected, click to reconnect</string>
+    <string name="reconnect_info">Connecting</string>
+    <string name="auto_disconnect">Timeout, auto disconnect</string>
+
+    <string name="save">Save</string>
+    <string name="close">Close</string>
+    <string name="saved">Saved</string>
+
+    <string name="music">Music</string>
+    <string name="music_play">Play</string>
+    <string name="music_pause">Pause</string>
+    <string name="music_stop">Stop</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="keyword">起動語</string>
+
+    <string name="app_name">Robobus_voicebot</string>
+    <string name="emo_on">表情を開く</string>
+    <string name="emo_off">表情オフ</string>
+    <string name="llm">大規模モデル</string>
+    <string name="role">役割</string>
+    <string name="tone">音色</string>
+    <string name="role_setting">役割編集</string>
+    <string name="lang_setting">言語設定</string>
+
+    <string name="hearing"></string>
+    <string name="start_robot">ロボットの起動</string>
+    <string name="stop_robot">ロボットを閉じる</string>
+    <string name="stop_app">ソフトウェアを閉じる</string>
+
+    <string name="conn_status_ok">接続済み</string>
+    <string name="conn_status_err">現在の接続切断、再試行をクリックしてください</string>
+    <string name="reconnect_info">再接続中</string>
+    <string name="auto_disconnect">タイムアウト、自動切断</string>
+
+    <string name="save">保存</string>
+    <string name="close">閉じる</string>
+    <string name="saved">保存済み</string>
+
+    <string name="music">音楽</string>
+    <string name="music_play">再生</string>
+    <string name="music_pause">一時停止</string>
+    <string name="music_stop">停止</string>
+</resources>
